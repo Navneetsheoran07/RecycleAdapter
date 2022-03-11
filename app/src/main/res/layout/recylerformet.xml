@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeLayout"
+
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/abs"
+            android:id="@+id/imageview"
+            android:scaleType="fitXY"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:hint="Enter number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview"
+            android:layout_below="@id/edittext"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:text="Number"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/edittext"
+            android:id="@+id/clickbtn"
+            android:text="Click"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
